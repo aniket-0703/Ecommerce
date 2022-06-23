@@ -536,8 +536,10 @@
   ];
 
   
+  displayProducts(womensData);
 
-  womensData.forEach(function (ele) {
+function displayProducts(data){
+data.map(function (ele) {
     var box = document.createElement("div");
     box.setAttribute("id", "box");
 
@@ -556,12 +558,10 @@
     var button = document.createElement("button");
     button.innerText = "ADD TO CART";
 
- 
-   
-
 
     box.append(img, name, price,strikedoffprice, button);
     document.querySelector("#container").append(box);
 
   })
+}
 </script>
