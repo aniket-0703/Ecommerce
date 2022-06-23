@@ -74,6 +74,7 @@
   <div id="container">
   </div>
 </body>
+</html>
 <script>
   var mensData = [
     {
@@ -330,8 +331,10 @@
     },
   ];
 
+  displayProducts(mensData);
 
-  mensData.forEach(function (ele) {
+  function displayProducts(data){
+data.map(function (ele) {
     var box = document.createElement("div");
     box.setAttribute("id", "box");
 
@@ -358,6 +361,6 @@
     document.querySelector("#container").append(box);
 
   })
+}
 
 </script>
-</html>
